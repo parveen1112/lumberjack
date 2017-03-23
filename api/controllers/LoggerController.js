@@ -21,7 +21,6 @@ var LoggerController = BaseController.extend({
     addError: function(req, res){
         var data = req.body.data,
             resp = new Response();
-
         LoggerService.addHost(getHost(data[0]), function(err, host){
             if (host) {
                 _.every(data, function(obj){ obj.host = host});

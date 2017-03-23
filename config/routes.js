@@ -36,7 +36,10 @@ module.exports.routes = {
     'POST /user' : 'AuthController.add',
     'POST /login'  : 'AuthController.login',
     '/logout' : 'AuthController.logout',
-    'POST /error' : 'LoggerController.addError',
+    'POST /error' : {
+        target: 'LoggerController.addError',
+        cors : true
+    },
     '/hosts' : 'LoggerController.getHosts',
     '/host/error' : 'LoggerController.getErrorByHost'
 
