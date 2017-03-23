@@ -32,9 +32,13 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+
     'POST /user' : 'AuthController.add',
-    'POST /user/login'  : 'AuthController.login',
-    '/user/logout' : 'AuthController.logout'
+    'POST /login'  : 'AuthController.login',
+    '/logout' : 'AuthController.logout',
+    'POST /error' : 'LoggerController.addError',
+    '/hosts' : 'LoggerController.getHosts',
+    '/host/error' : 'LoggerController.getErrorByHost'
 
   /***************************************************************************
   *                                                                          *

@@ -11,6 +11,15 @@
  * For more information on configuring the session, check out:
  * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.session.html
  */
+function getMongoUrl() {
+    var host = process.env.MONGO_HOST || 'localhost',
+        port = process.env.MONGO_PORT || 27017,
+        user = process.env.MONGO_USER || '',
+        password = process.env.MONGO_PWD || '',
+        userString = user ? user + ':' + password + '@' : '';
+    return 'mongodb://' + userString + host + ':' + port + '/lumberjack';
+}
+
 module.exports.session = {
 
   /***************************************************************************
@@ -20,8 +29,7 @@ module.exports.session = {
   * of your users, forcing them to log in again.                             *
   *                                                                          *
   ***************************************************************************/
-  secret: '358345dd6e346b1ce577952bcd3afc71',
-  key: 'lumberjack.sid',
+  secret: 'd0927d3fcae46516c4da18f6da9994cb',
 
 
   /***************************************************************************
@@ -44,7 +52,7 @@ module.exports.session = {
   *                                                                          *
   ***************************************************************************/
 
-   //adapter: 'redis',
+  // adapter: 'redis',
 
   /***************************************************************************
   *                                                                          *
@@ -55,11 +63,12 @@ module.exports.session = {
   *                                                                          *
   ***************************************************************************/
 
-//  host: process.env.REDIS_HOST || 'localhost',
-//  port: 6379,
-//  ttl: 1800,
-//  db: 0,
-//  prefix: 'lsess:'
+  // host: 'localhost',
+  // port: 6379,
+  // ttl: <redis session TTL in seconds>,
+  // db: 0,
+  // pass: <redis auth password>,
+  // prefix: 'sess:',
 
 
   /***************************************************************************
@@ -74,13 +83,7 @@ module.exports.session = {
   ***************************************************************************/
 
   adapter: 'mongo',
-  host: process.env.MONGO_HOST || 'localhost',
-  port: process.env.MONGO_PORT || 27017,
-  //Add user and password if required
-  user: process.env.MONGO_USER || '',
-  password: process.env.MONGO_PWD || '',
-  database: 'lumberjack',
-
+  url: getMongoUrl(),
 
   /***************************************************************************
   *                                                                          *

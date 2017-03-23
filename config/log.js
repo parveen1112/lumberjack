@@ -10,12 +10,13 @@
  * http://sailsjs.org/#/documentation/concepts/Logging
  */
 
-var winston = require('winston'),
-    stamp = "JB:LOGS:",
-    stampLength = stamp.length,
-    timeStampFormat = "YYYY-MM-DDTHH:mm:ss.SSSZ",
-    moment = require('moment');
-require('winston-daily-rotate-file');
+var winston = require('winston');
+var stamp = "JB:LOGS:";
+var stampLength = stamp.length;
+var timeStampFormat = "YYYY-MM-DDTHH:mm:ss.SSSZ";
+var moment = require('moment');
+
+
 function logTemplate(level, meta, message){
     return "{" +
         "\"timestamp\" : \"" + moment().format(timeStampFormat) + "\" ," +
@@ -60,7 +61,7 @@ function formatter(args) {
 
 
 
-var logFileLocation = (process.env.NODE_ENV === 'production') ? '/var/log/lumberjack/' : './logs/';
+var logFileLocation = (process.env.NODE_ENV === 'production') ? '/var/log/shenron/' : './logs/';
 
 
 var customLogger = new winston.Logger({
