@@ -59,10 +59,10 @@ module.exports.connections = {
   //mongodb://swapnesh:technocrats@ds141450.mlab.com:41450/lumberjack
   mongodb: {
      adapter: 'sails-mongo',
-     host: 'ds141450.mlab.com',
-     port: 41450,
-     user: 'swapnesh', //optional
-     password: 'technocrats', //optional
+     host: 'localhost',
+     port: 27017,
+     user: '', //optional
+     password: '', //optional
      database: 'lumberjack' //optional
   },
 
