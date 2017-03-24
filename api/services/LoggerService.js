@@ -9,10 +9,8 @@ module.exports = {
        })
     },
     findByHost :  function(obj, cb) {
-        Host.findOne(obj).exec(function (err, obj) {
-            ErrorList.find().where({host : obj.id}).exec(function (err, errorList) {
-                return cb(err, errorList);
-            });
+        ErrorList.find().where({host : obj.name}).exec(function (err, errorList) {
+            return cb(err, errorList);
         });
     },
     add : function (obj, cb) {
