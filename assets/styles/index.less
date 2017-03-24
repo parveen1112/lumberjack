@@ -1,0 +1,92 @@
+@primarycolor: #FF7F50;
+@color:#800080;
+@bordercolor:#bf4040;
+@bgcolor:beige;
+h1{
+color: @primarycolor;
+}
+h3{
+color: @color;
+}
+.c-header{
+    width: 102%;
+    color: @bordercolor;
+    background-color: @bgcolor;
+    border: 2px solid;
+    text-align: center;
+    padding: 11px 0;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-left: -1%;
+    border-width: 2px 0;
+}
+.c-header-title,.c-header-logo{
+    display: inline-block;
+}
+.c-header-logo{
+    img{
+        width: 50px;
+        height: 40px;
+    }
+}
+button.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    border: 1px solid @bordercolor;
+    border-width: 0 1px 1px;
+    border-radius: 1px;
+    background-color: beige;
+}
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd; 
+    border: 1px solid;
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}
+.feeddata{
+width: 70%;
+margin: 50px auto 0;
+border-top: 1px solid @bordercolor;
+}
+.panel{
+    table th{
+        width: 33%;
+        text-align:center;
+        border: 2px solid @bordercolor;
+    }
+    table td{
+        width: 33%;
+        border: 1px solid @bordercolor;
+        padding: 10px 0 10px 10px;
+        font-size: 18px;
+    }
+}
+.c-footer{
+    width: 102%;
+    background-color: @bgcolor;
+    border: 2px solid @bordercolor;
+    text-align: right;
+    padding: 11px 0;
+    font-family: sans-serif;
+    margin-left: -1%;
+    border-width: 2px 0;
+    margin-top: 17px;
+   
+}
+.c-footer small{
+    margin-right: 30px;
+    }
+section{
+    min-height: 500px;
+}

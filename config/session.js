@@ -82,23 +82,23 @@ module.exports.session = {
   *                                                                          *
   ***************************************************************************/
 
-  adapter: 'mongo',
-  url: getMongoUrl(),
-
-  /***************************************************************************
-  *                                                                          *
-  * Optional Values:                                                         *
-  *                                                                          *
-  * See https://github.com/kcbanner/connect-mongo for more                   *
-  * information about connect-mongo options.                                 *
-  *                                                                          *
-  * See http://bit.ly/mongooptions for more information about options        *
-  * available in `mongoOptions`                                              *
-  *                                                                          *
-  ***************************************************************************/
-
-  collection: 'sessions',
-  stringify: false
+//  adapter: 'mongo',
+//  url: getMongoUrl(),
+//
+//  /***************************************************************************
+//  *                                                                          *
+//  * Optional Values:                                                         *
+//  *                                                                          *
+//  * See https://github.com/kcbanner/connect-mongo for more                   *
+//  * information about connect-mongo options.                                 *
+//  *                                                                          *
+//  * See http://bit.ly/mongooptions for more information about options        *
+//  * available in `mongoOptions`                                              *
+//  *                                                                          *
+//  ***************************************************************************/
+//
+//  collection: 'sessions',
+//  stringify: false
   // mongoOptions: {
   //   server: {
   //     ssl: true
