@@ -7,6 +7,7 @@
             <th>Message</th>
         </tr>
         <% data.forEach(function(content){ %>
+        <% if (content.type === 'JS') { %>
             <tr>
                 <td>
                     <%= content.host %>
@@ -18,6 +19,7 @@
                     <%= content.message %>
                 </td>
             </tr>
+          <% } %>
             <% }) %>
     </table>
 
@@ -32,8 +34,8 @@
             <th>Message</th>
         </tr>
         <% data.forEach(function(content){ %>
+        <% if (content.type === '4XX') { %>
             <tr>
-
                 <td>
                     <%= content.host %>
                 </td>
@@ -45,7 +47,8 @@
                 </td>
 
             </tr>
-            <% }) %>
+            <% } %>
+         <% }) %>
     </table>
 </div>
 
@@ -58,6 +61,7 @@
             <th>Message</th>
         </tr>
         <% data.forEach(function(content){ %>
+          <% if (content.type === '5XX') { %>
             <tr>
 
                 <td>
@@ -71,6 +75,7 @@
                 </td>
 
             </tr>
+        <% } %>
             <% }) %>
     </table>
 </div>

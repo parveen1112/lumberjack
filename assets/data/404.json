@@ -1,0 +1,122 @@
+{
+  "success": true,
+  "message": [
+    "OK"
+  ],
+  "data": [
+    {
+      "host": "localhost:63342",
+      "name": "ReferenceError",
+      "mode": "stack",
+      "message": "y is not defined",
+      "frames": [
+        {
+          "filename": "http://localhost:63342/lumberjack-client/lumberjack-client/example/index.js",
+          "lineno": 16,
+          "colno": 10,
+          "function": "?"
+        }
+      ],
+      "type": "JS",
+      "browser": "Chrome 57",
+      "createdAt": "2017-03-24T18:27:19.134Z",
+      "updatedAt": "2017-03-24T18:27:19.134Z",
+      "id": "58d565073615365c13318bd3"
+    },
+    {
+      "host": "localhost:63342",
+      "name": "ReferenceError",
+      "mode": "stack",
+      "message": "y is not defined",
+      "frames": [
+        {
+          "filename": "http://localhost:63342/lumberjack-client/lumberjack-client/example/index.js",
+          "lineno": 16,
+          "colno": 10,
+          "function": "?"
+        }
+      ],
+      "type": "JS",
+      "browser": "Chrome 57",
+      "createdAt": "2017-03-24T18:27:19.131Z",
+      "updatedAt": "2017-03-24T18:27:19.131Z",
+      "id": "58d565073615365c13318bd2"
+    },
+    {
+      "host": "localhost:63342",
+      "name": "ReferenceError",
+      "mode": "stack",
+      "message": "y is not defined",
+      "frames": [
+        {
+          "filename": "http://localhost:63342/lumberjack-client/lumberjack-client/example/index.js",
+          "lineno": 16,
+          "colno": 10,
+          "function": "?"
+        }
+      ],
+      "type": "JS",
+      "browser": "Chrome 57",
+      "createdAt": "2017-03-24T18:27:19.136Z",
+      "updatedAt": "2017-03-24T18:27:19.136Z",
+      "id": "58d565073615365c13318bd4"
+    },
+    {
+      "host": "localhost:63342",
+      "name": "ReferenceError",
+      "mode": "stack",
+      "message": "y is not defined",
+      "frames": [
+        {
+          "filename": "http://localhost:63342/lumberjack-client/lumberjack-client/example/index.js",
+          "lineno": 16,
+          "colno": 10,
+          "function": "?"
+        }
+      ],
+      "type": "5XX",
+      "browser": "Chrome 57",
+      "createdAt": "2017-03-24T18:27:19.138Z",
+      "updatedAt": "2017-03-24T18:27:19.138Z",
+      "id": "58d565073615365c13318bd5"
+    },
+    {
+      "host": "localhost:63342",
+      "name": "ReferenceError",
+      "mode": "stack",
+      "message": "y is not defined",
+      "frames": [
+        {
+          "filename": "http://localhost:63342/lumberjack-client/lumberjack-client/example/index.js",
+          "lineno": 16,
+          "colno": 10,
+          "function": "?"
+        }
+      ],
+      "type": "4XX",
+      "browser": "Chrome 57",
+      "createdAt": "2017-03-24T18:27:19.138Z",
+      "updatedAt": "2017-03-24T18:27:19.138Z",
+      "id": "58d565073615365c13318bd5"
+    },
+    {
+      "host": "localhost:63342",
+      "name": "ReferenceError",
+      "mode": "stack",
+      "message": "y is not defined",
+      "frames": [
+        {
+          "filename": "http://localhost:63342/lumberjack-client/lumberjack-client/example/index.js",
+          "lineno": 16,
+          "colno": 10,
+          "function": "?"
+        }
+      ],
+      "type": "5XX",
+      "browser": "Chrome 57",
+      "createdAt": "2017-03-24T18:27:19.138Z",
+      "updatedAt": "2017-03-24T18:27:19.138Z",
+      "id": "58d565073615365c13318bd5"
+    }
+  ]
+}
