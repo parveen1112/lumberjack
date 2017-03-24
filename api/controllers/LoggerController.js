@@ -20,29 +20,16 @@ function getHost(data){
 var LoggerController = BaseController.extend({
     addError: function(req, res){
         var data = req.body.data,
-            resp = new Response();
-        console.log(data);
-        LoggerService.addHost(getHost(data[0]), function(err, host){
-            if (host) {
-                _.every(data, function(obj){ obj.host = host});
-                console.log('after data');
+            resp = new Response();git
                 LoggerService.add(data, function(err, list){
-                    console.log(err, list);
                    if (list) {
                        resp.success = true;
                        resp.message.push('Ok');
                    } else {
                        resp.message.push(err ? err.message : 'Error while adding');
                    }
-                    console.log(resp);
                    res.json(resp);
                 });
-            } else {
-                resp.message.push(err ? err.message : 'Error while adding');
-                console.log(resp);
-                res.json(resp);
-            }
-        })
     },
     getHosts: function(req, res) {
         LoggerService.findHosts(function(err, hosts){
@@ -92,6 +79,7 @@ var LoggerController = BaseController.extend({
               resp.success = true;
               resp.data = errorList;
           }
+          res.json(resp);
       });
     }
 });
