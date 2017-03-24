@@ -29,5 +29,10 @@ module.exports = {
                 });
             }
         });
+    },
+    getErrors: function(cb) {
+        ErrorList.find().exec(function(err, errorList){
+           cb(err, errorList);
+        });
     }
 };
