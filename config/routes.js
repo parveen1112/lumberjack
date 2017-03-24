@@ -42,7 +42,8 @@ module.exports.routes = {
         cors : true
     },
     '/hosts' : 'LoggerController.getHosts',
-    '/host/error' : 'LoggerController.getErrorByHost'
+    '/host/error' : 'LoggerController.getErrorByHost',
+    '/test': 'TestController.index'
 
   /***************************************************************************
   *                                                                          *
