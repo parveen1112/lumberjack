@@ -1,0 +1,49 @@
+@primarycolor: #FF7F50;
+@color:#800080;
+h1{
+color: @primarycolor;
+}
+h3{
+color: @color;
+}
+.c-header{
+    width: 100%;
+    color: brown;
+    background-color: beige;
+    border: 1px solid;
+    text-align: center;
+    padding: 11px 0;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.c-header-title,.c-header-logo{
+    display: inline-block;
+}
+.c-header-logo{
+    img{
+        width: 50px;
+        height: 40px;
+    }
+}
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}

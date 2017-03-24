@@ -32,7 +32,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-
+    '/' : 'IndexController.index',
     'POST /user' : 'AuthController.add',
     'POST /login'  : 'AuthController.login',
     '/logout' : 'AuthController.logout',

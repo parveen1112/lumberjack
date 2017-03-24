@@ -1,0 +1,29 @@
+<button class="accordion">JS</button>
+<div class="panel">
+ <ul>
+<% data.forEach(function(content){ %>
+<li><%= content.host %></li>
+<li><%= content.frames[0].status_code %></li>
+<% }) %>
+</ul>
+</div>
+
+<button class="accordion">4XX</button>
+<div class="panel">
+  <ul>
+<% data.forEach(function(content){ %>
+<li><%= content.host %></li>
+<li><%= content.frames[0].status_code %></li>
+<% }) %>
+</ul>
+</div>
+
+<button class="accordion">5XX</button>
+<div class="panel">
+  <ul>
+<% data.forEach(function(content){ %>
+<li><%= content.host %></li>
+<li><%= content.frames[0].status_code %></li>
+<% }) %>
+</ul>
+</div>
