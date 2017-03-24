@@ -43,14 +43,15 @@ button.accordion {
     border-width: 0 1px 1px;
     border-radius: 1px;
     background-color: beige;
+    font-weight: 600;
 }
 button.accordion.active, button.accordion:hover {
-    background-color: #ddd; 
+    background-color: @bordercolor; 
     border: 1px solid;
+    color: #fff;
 }
 
 div.panel {
-    padding: 0 18px;
     display: none;
     background-color: white;
 }
@@ -60,16 +61,22 @@ margin: 50px auto 0;
 border-top: 1px solid @bordercolor;
 }
 .panel{
+    table{
+        width: 100%;
+    }
     table th{
-        width: 33%;
+        width: 25%;
         text-align:center;
         border: 2px solid @bordercolor;
+        background-color: blanchedalmond;
+        padding: 5px 0;
     }
     table td{
-        width: 33%;
+        width: 25%;
         border: 1px solid @bordercolor;
         padding: 10px 0 10px 10px;
         font-size: 18px;
+        text-align: center;
     }
 }
 .c-footer{

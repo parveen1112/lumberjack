@@ -1,8 +1,8 @@
 "use strict";
-
 (function (window, $) {
+//    var jsData , ntfoundData , errData = {};
     $.ajax({
-        url: 'host/error?host=localhost:63342',
+        url: 'errors',
         success: function (data) {
             var html = new EJS({
                 url: '/templates/contentpage.ejs'

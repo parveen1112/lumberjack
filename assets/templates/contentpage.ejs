@@ -2,7 +2,8 @@
 <div class="panel">
     <table>
         <tr>
-            <th>HOST</th>
+            <th>Host</th>
+             <th>Browser</th>
             <th>File Name</th>
             <th>Message</th>
         </tr>
@@ -12,6 +13,9 @@
                 <td>
                     <%= content.host %>
                 </td>
+                <td>
+                    <%= content.browser %>
+                </td>             
                 <td>
                     <%= content.frames[0].filename %>
                 </td>
@@ -29,9 +33,10 @@
 <div class="panel">
     <table>
         <tr>
-            <th>HOST</th>
-            <th>File Name</th>
-            <th>Message</th>
+            <th>Host</th>
+            <th>Browser</th>
+            <th>Status code</th>
+            <th>Url</th>
         </tr>
         <% data.forEach(function(content){ %>
         <% if (content.type === '4XX') { %>
@@ -40,10 +45,13 @@
                     <%= content.host %>
                 </td>
                 <td>
-                    <%= content.frames[0].filename %>
+                    <%= content.browser %>
                 </td>
                 <td>
-                    <%= content.message %>
+                    <%= content.frames[0].status_code %>
+                </td>
+                <td>
+                    <%= content.frames[0].url %>
                 </td>
 
             </tr>
@@ -56,9 +64,10 @@
 <div class="panel">
     <table>
         <tr>
-            <th>HOST</th>
-            <th>File Name</th>
-            <th>Message</th>
+            <th>Host</th>
+             <th>Browser</th>
+            <th>Status code</th>
+            <th>Url</th>
         </tr>
         <% data.forEach(function(content){ %>
           <% if (content.type === '5XX') { %>
@@ -67,11 +76,14 @@
                 <td>
                     <%= content.host %>
                 </td>
-                <td>
-                    <%= content.frames[0].filename %>
+                 <td>
+                    <%= content.browser %>
+                </td> 
+                 <td>
+                    <%= content.frames[0].status_code %>
                 </td>
-                <td>
-                    <%= content.message %>
+                 <td>
+                    <%= content.frames[0].url %>
                 </td>
 
             </tr>
