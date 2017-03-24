@@ -1,0 +1,14 @@
+{"timestamp" : "2017-03-24T12:41:21.771+05:30" ,"level" : "info","content" :"\u001b[32minfo: \u001b[39m--------------------------------------------------------"}
+{"timestamp" : "2017-03-24T12:41:21.773+05:30" ,"level" : "info","content" :"\u001b[32minfo: \u001b[39mLumberjack is runing in `D:\\Parveen\\hackathon\\lumberjack`"}
+{"timestamp" : "2017-03-24T12:41:21.774+05:30" ,"level" : "warn","content" :"\u001b[33mwarn: \u001b[39msails.getBaseUrl() is deprecated and will be removed in Sails v1.0.  See http://sailsjs.org/documentation/reference/application/sails-getbaseurl for more info."}
+{"timestamp" : "2017-03-24T12:41:21.774+05:30" ,"level" : "info","content" :"\u001b[32minfo: \u001b[39mTo see your app, visit http://localhost:1337"}
+{"timestamp" : "2017-03-24T12:41:21.776+05:30" ,"level" : "info","content" :"\u001b[32minfo: \u001b[39mFri Mar 24 2017 12:41:21 GMT+0530 (India Standard Time)"}
+{"timestamp" : "2017-03-24T12:41:21.777+05:30" ,"level" : "info","content" :"\u001b[32minfo: \u001b[39mPort        : 1337"}
+{"timestamp" : "2017-03-24T12:41:21.777+05:30" ,"level" : "info","content" :"\u001b[32minfo: \u001b[39m--------------------------------------------------------"}
+{"timestamp" : "2017-03-24T12:44:04.504+05:30" ,"level" : "info","content" :"\u001b[32minfo: \u001b[39m--------------------------------------------------------"}
+{"timestamp" : "2017-03-24T12:44:04.508+05:30" ,"level" : "info","content" :"\u001b[32minfo: \u001b[39mLumberjack is runing in `D:\\Parveen\\hackathon\\lumberjack`"}
+{"timestamp" : "2017-03-24T12:44:04.517+05:30" ,"level" : "warn","content" :"\u001b[33mwarn: \u001b[39msails.getBaseUrl() is deprecated and will be removed in Sails v1.0.  See http://sailsjs.org/documentation/reference/application/sails-getbaseurl for more info."}
+{"timestamp" : "2017-03-24T12:44:04.519+05:30" ,"level" : "info","content" :"\u001b[32minfo: \u001b[39mTo see your app, visit http://localhost:1337"}
+{"timestamp" : "2017-03-24T12:44:04.521+05:30" ,"level" : "info","content" :"\u001b[32minfo: \u001b[39mFri Mar 24 2017 12:44:04 GMT+0530 (India Standard Time)"}
+{"timestamp" : "2017-03-24T12:44:04.522+05:30" ,"level" : "info","content" :"\u001b[32minfo: \u001b[39mPort        : 1337"}
+{"timestamp" : "2017-03-24T12:44:04.522+05:30" ,"level" : "info","content" :"\u001b[32minfo: \u001b[39m--------------------------------------------------------"}
