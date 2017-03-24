@@ -1,29 +1,76 @@
 <button class="accordion">JS</button>
 <div class="panel">
- <ul>
-<% data.forEach(function(content){ %>
-<li><%= content.host %></li>
-<li><%= content.frames[0].status_code %></li>
-<% }) %>
-</ul>
+    <table>
+        <tr>
+            <th>HOST</th>
+            <th>File Name</th>
+            <th>Message</th>
+        </tr>
+        <% data.forEach(function(content){ %>
+            <tr>
+                <td>
+                    <%= content.host %>
+                </td>
+                <td>
+                    <%= content.frames[0].filename %>
+                </td>
+                <td>
+                    <%= content.message %>
+                </td>
+            </tr>
+            <% }) %>
+    </table>
+
 </div>
 
 <button class="accordion">4XX</button>
 <div class="panel">
-  <ul>
-<% data.forEach(function(content){ %>
-<li><%= content.host %></li>
-<li><%= content.frames[0].status_code %></li>
-<% }) %>
-</ul>
+    <table>
+        <tr>
+            <th>HOST</th>
+            <th>File Name</th>
+            <th>Message</th>
+        </tr>
+        <% data.forEach(function(content){ %>
+            <tr>
+
+                <td>
+                    <%= content.host %>
+                </td>
+                <td>
+                    <%= content.frames[0].filename %>
+                </td>
+                <td>
+                    <%= content.message %>
+                </td>
+
+            </tr>
+            <% }) %>
+    </table>
 </div>
 
 <button class="accordion">5XX</button>
 <div class="panel">
-  <ul>
-<% data.forEach(function(content){ %>
-<li><%= content.host %></li>
-<li><%= content.frames[0].status_code %></li>
-<% }) %>
-</ul>
+    <table>
+        <tr>
+            <th>HOST</th>
+            <th>File Name</th>
+            <th>Message</th>
+        </tr>
+        <% data.forEach(function(content){ %>
+            <tr>
+
+                <td>
+                    <%= content.host %>
+                </td>
+                <td>
+                    <%= content.frames[0].filename %>
+                </td>
+                <td>
+                    <%= content.message %>
+                </td>
+
+            </tr>
+            <% }) %>
+    </table>
 </div>

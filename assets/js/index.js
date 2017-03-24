@@ -2,7 +2,7 @@
 
 (function (window, $) {
     $.ajax({
-        url: '/host/error?host=localhost:1337',
+        url: 'host/error?host=localhost:63342',
         success: function (data) {
             var html = new EJS({
                 url: '/templates/contentpage.ejs'
@@ -15,8 +15,10 @@
                     this.classList.toggle("active");
                     var panel = this.nextElementSibling;
                     if (panel.style.display === "block") {
-                        panel.style.display = "none";
+                        $(panel).slideUp("slow");
+                       // panel.style.display = "none";
                     } else {
+                        $(panel).slideToggle("slow");
                         panel.style.display = "block";
                     }
                 }
