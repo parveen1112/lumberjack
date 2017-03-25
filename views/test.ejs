@@ -1,14 +1,29 @@
-<h1>Swapnesh</h1>
-
+<h1>LumberJack</h1>
 <form action="" class="components">
-  <div>
-    <label><input type="checkbox" /> Label text</label>
-  </div>
-  
-  <div>
-    <label><input type="checkbox" /> Label text</label>
-  </div>
-  <div>
-    <input type="submit" value="Submit">
-  </div>
+	<div>
+		<label>
+			<input name="component[]" id="checkbox1" class="component" type="checkbox" value="header" />
+			Header
+		</label>
+	</div>
+	<div>
+		<label>
+			<input name="component[]" id="checkbox1" class="component" type="checkbox" value="global-navigation" />
+			Global navigation 
+		</label>
+	</div>
+	<div>
+		<label>
+			<input name="component[]" id="checkbox1" class="component" type="checkbox" value="hero" />
+			Hero
+		</label>
+	</div>
+	<div>
+		<label>
+			<input name="component[]" id="checkbox1" class="component" type="checkbox" value="footer" />
+			Footer
+		</label>
+	</div>
+	<input type="button" onclick="testbutton()" value="Submit">
 </form>
+<div>

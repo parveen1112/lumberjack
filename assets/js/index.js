@@ -31,4 +31,31 @@
 
 
 
+
+
 })(window, jQuery);
+
+
+function testbutton() {
+    var val = [];
+    $(':checkbox:checked').each(function(i){
+      val[i] = $(this).val();
+    });
+
+
+console.log(val);
+// http://localhost:8282/api/exec
+    $.ajax({
+        url: 'http://localhost:8282/api/exec',
+        method: 'POST',
+        data: {data : val},
+        success: function (data) {
+            console.log("data:: ", data);
+        },
+        error: function (err, b, c) {
+            console.log('AjaxError', err, b, c)
+        }
+    });
+
+
+}
