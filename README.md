@@ -1,6 +1,6 @@
-# project
+# Lumberjack
 
-a [Sails](http://sailsjs.org) application
+Application to log the errors from ##lumberjack-client(https://github.com/parveen1112/lumberjack-client)
 
 Install Mongo.
 npm install.
